@@ -1,0 +1,7 @@
+*.jdx
+*.JDX
+.idea/
+*.iml
+/target/
+/allure-results/
+/.allure/
