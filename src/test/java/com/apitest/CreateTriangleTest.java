@@ -25,7 +25,7 @@ import static org.hamcrest.Matchers.*;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes= AppConfig.class)
-public class SimpleCRUDApiTest {
+public class CreateTriangleTest {
 
     private HttpHeaders headers;
 
