@@ -1,10 +1,10 @@
 package com.apitest.matchers;
 
-import com.apitest.dataModel.TriangleGetModel;
+import com.apitest.dataModel.TriangleResponseModel;
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeMatcher;
 
-public class EqualTriangleMatcher extends TypeSafeMatcher<TriangleGetModel> {
+public class EqualTriangleMatcher extends TypeSafeMatcher<TriangleResponseModel> {
 
     private Double firstSide;
     private Double secondSide;
@@ -22,7 +22,7 @@ public class EqualTriangleMatcher extends TypeSafeMatcher<TriangleGetModel> {
     }
 
     @Override
-    protected boolean matchesSafely(TriangleGetModel triangleGetModel) {
+    protected boolean matchesSafely(TriangleResponseModel triangleGetModel) {
         return triangleGetModel.getFirstSide().equals(firstSide) &&
                 triangleGetModel.getSecondSide().equals(secondSide) &&
                 triangleGetModel.getThirdSide().equals(thirdSide);
