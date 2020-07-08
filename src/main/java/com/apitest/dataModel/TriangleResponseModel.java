@@ -3,7 +3,7 @@ package com.apitest.dataModel;
 import lombok.Data;
 
 @Data
-public class TriangleGetModel {
+public class TriangleResponseModel {
     private String id;
     private Double firstSide;
     private Double secondSide;
@@ -14,4 +14,5 @@ public class TriangleGetModel {
     private String exception;
     private String message;
     private String path;
+    private Double result;
 }

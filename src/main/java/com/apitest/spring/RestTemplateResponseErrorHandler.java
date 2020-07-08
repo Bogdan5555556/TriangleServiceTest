@@ -19,6 +19,6 @@ public class RestTemplateResponseErrorHandler implements ResponseErrorHandler {
 
     @Override
     public void handleError(ClientHttpResponse clientHttpResponse) throws IOException {
-        log.error("There is HTTP response status different from 200 OK!");
+        log.warn("There is HTTP response status different from 200 OK!");
     }
 }
